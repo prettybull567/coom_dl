@@ -16,6 +16,8 @@ jobs:
           run: flutter pub get
         - name: Generate intermediates
           run: flutter pub run build_runner build --delete-conflicting-outputs
+        - name: add windows support
+          run: flutter create --platforms=windows .
         - name: Enable windows build
           run: flutter config --enable-windows-desktop
         - name: Build artifacts
