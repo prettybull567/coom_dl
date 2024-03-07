@@ -26,10 +26,10 @@ jobs:
           uses: thedoctor0/zip-release@master
           with:
             type: 'zip'
-            filename: coom-dl-${{github.ref_name}}-windows.zip
+            filename: coom-dl-dev-windows.zip
             directory: build/windows/x64/runner/Release
         - name: Artifacts Release
           uses: actions/upload-artifact@v4
           with:
-            name: coom-dl-${{github.ref_name}}-windows.zip
-            path: build/windows/x64/runner/Release/
+            name: coom-dl-dev-windows.zip
+            path: build/windows/x64/runner/Release/coom-dl-dev-windows.zip
