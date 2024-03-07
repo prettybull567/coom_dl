@@ -31,5 +31,5 @@ jobs:
         - name: Artifacts Release
           uses: actions/upload-artifact@v4
           with:
-            name: coom-dl-dev-windows.zip
+            name: coom-dl-dev-windows
             path: build/windows/x64/runner/Release/coom-dl-dev-windows.zip
